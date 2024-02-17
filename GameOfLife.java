@@ -11,9 +11,9 @@ public class GameOfLife {
 		String fileName = args[0];
 		//// Uncomment the test that you want to execute, and re-compile.
 		//// (Run one test at a time).
-		test1("line.dat");
+		////("line.dat");
 		////test2("line.dat");
-		////test3("square.dat", 3);
+		test3("square.dat", 3);
 		////play("hypnotic.dat");
 	}
 	
