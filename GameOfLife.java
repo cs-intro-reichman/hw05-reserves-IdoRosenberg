@@ -11,7 +11,7 @@ public class GameOfLife {
 		String fileName = args[0];
 		//// Uncomment the test that you want to execute, and re-compile.
 		//// (Run one test at a time).
-		////test1("line.dat");
+		////test1("square.dat");
 		////test2("line.dat");
 		////test3("square.dat", 3);
 		play("hypnotic.dat");
@@ -143,8 +143,8 @@ public class GameOfLife {
 	
 	// Prints the board. Alive and dead cells are printed as 1 and 0, respectively.
     public static void print(int[][] arr) {
-		for(int i=0; i<arr.length; i++){
-			for(int j=0; j<arr[i].length; j++){
+		for(int i=1; i<arr.length-1; i++){
+			for(int j=1; j<arr[i].length-1; j++){
 				System.out.print(arr[i][j] + " ");
 			}
 			System.out.println();
