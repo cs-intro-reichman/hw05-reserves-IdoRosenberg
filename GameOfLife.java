@@ -38,7 +38,7 @@ public class GameOfLife {
 		for (int gen = 0; gen < Ngen; gen++) {
 			System.out.println("Generation " + gen + ":");
 			print(board);
-			System.out.println();
+			System.out.print("\n");
 			board = evolve(board);
 		}
 	}
