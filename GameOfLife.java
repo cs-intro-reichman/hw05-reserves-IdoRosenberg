@@ -38,6 +38,7 @@ public class GameOfLife {
 		for (int gen = 0; gen < Ngen; gen++) {
 			System.out.println("Generation " + gen + ":");
 			print(board);
+			System.out.println();
 			board = evolve(board);
 		}
 	}
@@ -151,7 +152,7 @@ public class GameOfLife {
 			}
 			if(i != arr.length-2)
 				System.out.println();
-		}
+		}	
 	}
 		
     // Displays the board. Living and dead cells are represented by black and white squares, respectively.
